@@ -28,7 +28,7 @@
         margin-top: 50px;
        }
        .inputclass{
-        border:0px solid green;
+       
         /* display: flex;
         justify-content: center;
         align-items: center; */
@@ -36,7 +36,10 @@
         margin:auto;
         display:grid;
         grid-template-rows: repeat(2,30px);
-       
+        border:none;
+        background-color: transparent;
+        outline:none;
+        resize:none
        }
        button{
        font-size: 30px;
@@ -84,16 +87,23 @@
         text-align: center;
         color:blue;
        }
+       input{
+        border:none;
+        background-color: transparent;
+      
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px; */
+        border-bottom: 2px solid rgb(128, 123, 123);
+       }
     </style>
 </head>
 <body>
     <div>
        <h1>Login</h1>
        <div class="inputclass">
-       <span>Email</span><input  type="email">
+       <input placeholder="Email"  type="email">
     </div>
        <div class="inputclass">
-       <span>Password</span> <input  type="password">
+        <input placeholder="Password"  type="password">
        </div>
       <div class="button"> <button>Login</button></div>
     
