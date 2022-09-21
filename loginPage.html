@@ -5,8 +5,106 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>loginPage</title>
+    <style>
+        body{
+            border:0px solid blue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: skyblue;
+            height:800px
+        }
+       body>div{
+        border:0px solid red;
+        height:600px;
+        width:30%;
+        background-color: white;
+        border-radius: 20px;
+       
+       }
+       body>div>h1{
+        text-align: center;
+        margin-bottom: 50px;
+        margin-top: 50px;
+       }
+       .inputclass{
+        border:0px solid green;
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        width:80%;
+        margin:auto;
+        display:grid;
+        grid-template-rows: repeat(2,30px);
+       
+       }
+       button{
+       font-size: 30px;
+       width:80%;
+       border: 0px solid blue;
+       background-color: blue;
+       color: aliceblue;
+       }
+       .button{
+        border:0px solid black;
+       text-align: center;
+       margin-top: 25px;
+       margin-bottom: 75px;
+       }
+       .firstpara{
+        border:0px solid teal;
+       display: flex;
+       width: 30%;
+       justify-content: space-around;
+       margin: auto;
+       
+       }
+       .firstpara>#pass{
+        border:0px solid brown;
+        text-align: center;
+        color: blue;
+       }
+       .firstpara>#for{
+        border: 0px solid pink;
+        text-align: center;
+       }
+       .secpara{
+        border: 0px solid teal;
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+       }
+       .secpara>#secparachild1{
+        border:0px solid red;
+        text-align: center;
+       }
+       .secpara>#secparachild2{
+        border:0px solid black;
+        text-align: center;
+        color:blue;
+       }
+    </style>
 </head>
 <body>
+    <div>
+       <h1>Login</h1>
+       <div class="inputclass">
+       <span>Email</span><input  type="email">
+    </div>
+       <div class="inputclass">
+       <span>Password</span> <input  type="password">
+       </div>
+      <div class="button"> <button>Login</button></div>
     
+    <div class="firstpara">
+    <p id="for">Forgot</p>
+    <p id="pass">Password?</p>
+    </div>
+    <div class="secpara">
+        <p id="secparachild1">Don't have an account?</p>
+        <p id="secparachild2">Sign up</p>
+    </div>
+    </div>
 </body>
 </html>
